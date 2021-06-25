@@ -1,69 +1,85 @@
-*{
-    box-sizing: border-box;
-    font-size: 1.1rem;
-    line-height: 32px;
+* {
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  line-height: 32px;
 }
-body{
-    background: linear-gradient(35deg, #ccffff,#ffcccc) no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height:100vh;
-    /* display: grid; */
-    overflow: hidden;
-    /* place-items: center; */
+body {
+  background: linear-gradient(35deg, #ccffff, #ffcccc) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 120vh;
+  /* display: grid; */
+  /* overflow: hidden; */
+  /* place-items: center; */
 }
-h1
-{
-    text-align: center;
-    font-size: 2rem;
-    line-height: 5rem;
-
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 5rem;
 }
-section{
-    max-width: 1280px;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
+section {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-img{
-    object-fit: contain;
-}
-
-.flex{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-}
-.bor{
-    width: 200px;
-    height: 200px;
-    border: 1px solid #333;
-    border-radius: 5px;
-}
-.bor.chosen{
-    border: 1px solid blue;
+img {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
 }
 
-#score{
-    /* display: grid; */
-    position: absolute;
-    top: 30%;
-    left: 48%;
-    visibility: hidden;
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* min-height: 730px; */
 }
-.com{
-    visibility: hidden;
+
+.bor {
+  margin: 1rem auto;
+
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
-.but{
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    align-items: center;
-    gap: 1rem;
+.bor:hover {
+  transform: scale(1.05);
 }
-#text{
-    display: block;
+.bor.chosen {
+  border: 3px solid blue;
+  border-radius: 12px;
+}
+
+#score {
+  /* display: grid; */
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  visibility: hidden;
+}
+.com {
+  visibility: hidden;
+  margin-left: 350px;
+}
+.but {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+#text {
+  /* width: 100px; */
+  min-width: 130px;
+  margin: 1rem auto;
+  position: absolute;
+  top: 50%;
+  /* font-weight: 600; */
+  font-size: 1.5rem;
+  align-items: left;
+  left: 42%;
 }
